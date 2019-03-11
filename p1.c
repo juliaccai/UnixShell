@@ -1,7 +1,5 @@
- /* CS570 Program 1 
-    *  Julia Cai
+ /*   Julia Cai
     *  09/17/18
-    *  Carroll
     *  
     *  Lexical Analyzer: takes in an input from stdin until the end of file is reached
     *  - Analyses if the input has a ' ', '\0', '\n' or EOF is reached then the previously inputted

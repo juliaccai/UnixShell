@@ -7,19 +7,18 @@
     void parsehelper();
     void parse();
     char* tilda(char* arg);
-    /* CS570 Program 2
+   /* 
     *  Julia Cai
     *  11/28/18
-    *  Carroll
     *  
     *  Shell-like program 
     *  SPECS:
     *  - Takes in input from the command line or files if specified, and performs
-   *    tasks based on the command given as the first argument. 
-   *  - The arguments for that command can consist of words and 
+    *    tasks based on the command given as the first argument. 
+    *  - The arguments for that command can consist of words and 
 metacharacters such 
    *    as '&', '|', '<', and '>'. These commands work similarly to how they are
-  *    expected to in a real shell, except if there is more than one pipe it throws
+   *    expected to in a real shell, except if there is more than one pipe it throws
    *    an error.
    *  - Implements hereis delimiter, reads stdin until the delimiter is found
    *  - Implements multiple pipes

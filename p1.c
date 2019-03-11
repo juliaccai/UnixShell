@@ -1,23 +1,23 @@
- /*   Julia Cai
-    *  09/17/18
-    *  
-    *  Lexical Analyzer: takes in an input from stdin until the end of file is reached
-    *  - Analyses if the input has a ' ', '\0', '\n' or EOF is reached then the previously inputted
-   *  characters form a 'word' and the length of the word is returned
-   *  - If there are no characters typed before the:
-   *     - ' ', then ' ' is ignored
-   *     - '\0' or ';' or '\n', then the character array has an empty string, 0 and is returned 
-   *     - 'EOF', then the character array has an empty string, and -255 is returned
-   *  - If an EOF is reached, then a -255 is returned
-   *  - If any of the following metacharacters '<' '>' '|' '&' are typed then it is stored as a 'word' and a 1 is returned
-   *  - If there are two consecutive '<' so '<<' then that is stored as a 'word' and 2 is returned
-   *  - If the 'word' starts with a '$' symbol then the 'word' size becomes negative 
-   *  - If there is a '\':
-   *     - regular chars ignore it
-   *     - metacharacters are printed like regular chars
-   *     - newline is treated as a space ('\n')
-   *  - If the word size is 254 then the word is stored and the size is returned, the rest of the word is stored as a new word
-   */
+ /* Julia Cai
+  *  09/17/18
+  *  
+  *  Lexical Analyzer: takes in an input from stdin until the end of file is reached
+  *  - Analyses if the input has a ' ', '\0', '\n' or EOF is reached then the previously inputted
+  *  characters form a 'word' and the length of the word is returned
+  *  - If there are no characters typed before the:
+  *     - ' ', then ' ' is ignored
+  *     - '\0' or ';' or '\n', then the character array has an empty string, 0 and is returned 
+  *     - 'EOF', then the character array has an empty string, and -255 is returned
+  *  - If an EOF is reached, then a -255 is returned
+  *  - If any of the following metacharacters '<' '>' '|' '&' are typed then it is stored as a 'word' and a 1 is returned
+  *  - If there are two consecutive '<' so '<<' then that is stored as a 'word' and 2 is returned
+  *  - If the 'word' starts with a '$' symbol then the 'word' size becomes negative 
+  *  - If there is a '\':
+  *     - regular chars ignore it
+  *     - metacharacters are printed like regular chars
+  *     - newline is treated as a space ('\n')
+  *  - If the word size is 254 then the word is stored and the size is returned, the rest of the word is stored as a new word
+  */
    
    #include "p2.h"
    #include "getword.h"
